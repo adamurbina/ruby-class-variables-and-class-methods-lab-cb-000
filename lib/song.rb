@@ -10,9 +10,9 @@ class Song
         @artist = artist
         @genre = genre
 
-        
 
-        !@@artists.include?(artist) ? @@artists << artist
+
+        !@@artists.keys.include?(artist) ? @@artists[artist] = @@artist[artist] += 1
         !@@genres.include?(genre) ? @@genres << genre
     end
 
